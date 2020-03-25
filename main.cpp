@@ -108,73 +108,73 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 } 
 //1
 bool temprature(int temp = 70, int humidity = 55)
- {
-     ignoreUnused(temp, humidity);
+{
+    ignoreUnused(temp, humidity);
      
-     return {};
- }
+    return {};
+}
 //2
 int TimeSignature(int beatsInMeasure, bool quarterNoteGetsBeat = true)
 {
     ignoreUnused(beatsInMeasure, quarterNoteGetsBeat);
 
-     return {};
+    return {};
 }
 //3
 bool spellingOfYes(char firstLetter = 'y', char secondLetter = 'e', char thirdLetter = 's')
 {
     ignoreUnused(firstLetter, secondLetter, thirdLetter);
 
-     return {};
+    return {};
 }
 //4
 int addedNumber(int firstNumber, int secondNumber)
 {
     ignoreUnused(firstNumber, secondNumber);
 
-     return {};
+    return {};
 }
 //5
 bool jazz(int swingLevel = 1000, bool theLicc = true)
 {
     ignoreUnused(swingLevel, theLicc);
 
-     return {};
+    return {};
 }
 //6
 float calculatedNumber(int numberOne, float numberTwo = 3.5664f)
 {
     ignoreUnused(numberOne, numberTwo);
 
-     return {};
+    return {};
 }
 //7
 char abcd(char firstLetter = 'a',char secondLetter = 'b', char thirdLetter = 'c')
 {
     ignoreUnused(firstLetter, secondLetter, thirdLetter);
 
-     return {};
+    return {};
 }
 //8
 double shoppingList(bool beans = true, bool eggs = true)
 {
     ignoreUnused(beans, eggs);
 
-     return {};
+    return {};
 }
 //9
 float profit(double revinue, double expenses)
 {
     ignoreUnused(revinue, expenses);
 
-     return {};
+    return {};
 }
 //10
 int moneyMadeWhileSportsBetting(bool profitability, int profit)
 {
     ignoreUnused(profitability, profit);
 
-     return {};
+    return {};
 }
 
 
