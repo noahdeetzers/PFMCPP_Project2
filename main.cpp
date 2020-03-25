@@ -86,9 +86,9 @@ void variableDeclarations()
     char Julie = 'j';
     char Backpack = 'b';
 
-    float pi = 3.14145;
-    float randomNumber = 3.45;
-    float hardDriveStorage = 256;
+    float pi = 3.14145f;
+    float randomNumber = 3.45f;
+    float hardDriveStorage = 256.43f;
 
     double longNumber = 3.5434546984;
     double penWidth = 1.303405;
@@ -142,7 +142,7 @@ bool jazz(int swingLevel = 1000, bool theLicc = true)
      return {};
 }
 //6
-float calculatedNumber(int numberOne, float numberTwo = 3.5664)
+float calculatedNumber(int numberOne, float numberTwo = 3.5664f)
 {
     ignoreUnused(numberOne, numberTwo);
 
@@ -198,13 +198,13 @@ int main()
     //7)
     int lettersMissed = abcd('c', 'b', 'a');
     //8)
-    bool itemsMissed = shoppingList(false, false);
+    auto itemsMissed = shoppingList(false, false);
     //9)
-    int loss = profit(-5,30);
+    float loss = profit(-5,30);
     //10)
     int moneyLost = moneyMadeWhileSportsBetting(false, 0);
     
-    ignoreUnused(carRented, totalTemp, fourFour, rightSpelling,totalSum, otherMusic, sumOfcalculatedNumber, lettersMissed, itemsMissed, profit, moneyLost);
+    ignoreUnused(carRented, totalTemp, fourFour, rightSpelling,totalSum, otherMusic, sumOfcalculatedNumber, lettersMissed, itemsMissed, profit, loss, moneyLost);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
