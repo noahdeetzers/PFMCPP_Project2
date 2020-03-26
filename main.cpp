@@ -184,7 +184,7 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-  auto totalTemp = temprature();
+    auto totalTemp = temprature();
     //2)
     bool fourFour = TimeSignature(true,true);
     //3)
