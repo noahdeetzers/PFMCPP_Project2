@@ -16,7 +16,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t)
  put them here: 
- 
+
+ integer                int
+ character              char
+ boolean                bool
+ floating point         float
+ double floating point  double
  
  
  
@@ -67,8 +72,30 @@ void variableDeclarations()
     int number = 2; //declaration of a primitive named 'number' with an initial value of '2'
     
     
-    
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+
+    int temp = 75;
+    int ph = 5;
+    int toxicity = 6;
+
+    bool happy = true;
+    bool codingIsHard = true;
+    bool codingIsFun = true;
+
+    char Noah = 'n';
+    char Julie = 'j';
+    char Backpack = 'b';
+
+    float pi = 3.14145f;
+    float randomNumber = 3.45f;
+    float hardDriveStorage = 256.43f;
+
+    double longNumber = 3.5434546984;
+    double penWidth = 1.303405;
+    double eulersConstant = 0.5772156649;
+
+    ignoreUnused(temp, ph, toxicity, happy, codingIsHard, codingIsFun, Noah, Julie, Backpack, pi, randomNumber, hardDriveStorage, longNumber, penWidth, eulersConstant);
+
 }
 /*
  10 functions
@@ -79,46 +106,77 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
     ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused() function
     return {}; //if your function returns something other than void, add 'return {};' at the end of it.
 } 
+//1
+bool temprature(int temp = 70, int humidity = 55)
+{
+    ignoreUnused(temp, humidity);
+     
+    return {};
+}
+//2
+int TimeSignature(int beatsInMeasure, bool quarterNoteGetsBeat = true)
+{
+    ignoreUnused(beatsInMeasure, quarterNoteGetsBeat);
 
-/*
- 1)
- */
+    return {};
+}
+//3
+bool spellingOfYes(char firstLetter = 'y', char secondLetter = 'e', char thirdLetter = 's')
+{
+    ignoreUnused(firstLetter, secondLetter, thirdLetter);
 
-/*
- 2)
- */
+    return {};
+}
+//4
+int addedNumber(int firstNumber, int secondNumber)
+{
+    ignoreUnused(firstNumber, secondNumber);
 
-/*
- 3)
- */
+    return {};
+}
+//5
+bool jazz(int swingLevel = 1000, bool theLicc = true)
+{
+    ignoreUnused(swingLevel, theLicc);
 
-/*
- 4)
- */
+    return {};
+}
+//6
+float calculatedNumber(int numberOne, float numberTwo = 3.5664f)
+{
+    ignoreUnused(numberOne, numberTwo);
 
-/*
- 5)
- */
+    return {};
+}
+//7
+char abcd(char firstLetter = 'a',char secondLetter = 'b', char thirdLetter = 'c')
+{
+    ignoreUnused(firstLetter, secondLetter, thirdLetter);
 
-/*
- 6)
- */
+    return {};
+}
+//8
+double shoppingList(bool beans = true, bool eggs = true)
+{
+    ignoreUnused(beans, eggs);
 
-/*
- 7)
- */
+    return {};
+}
+//9
+float profit(double revinue, double expenses)
+{
+    ignoreUnused(revinue, expenses);
 
-/*
- 8)
- */
+    return {};
+}
+//10
+int moneyMadeWhileSportsBetting(bool profitability, int profit)
+{
+    ignoreUnused(profitability, profit);
 
-/*
- 9)
- */
+    return {};
+}
 
-/*
- 10)
- */
 
 int main()
 {
@@ -126,27 +184,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto totalTemp = temprature();
     //2)
-    
+    bool fourFour = TimeSignature(true,true);
     //3)
-    
+    bool rightSpelling = spellingOfYes(true);
     //4)
-    
+    int totalSum = addedNumber(5,6);
     //5)
-    
+    bool otherMusic = jazz(1,false);
     //6)
-    
+    auto sumOfcalculatedNumber = calculatedNumber(50,60);
     //7)
-    
+    int lettersMissed = abcd('c', 'b', 'a');
     //8)
-    
+    auto itemsMissed = shoppingList(false, false);
     //9)
-    
+    float loss = profit(-5,30);
     //10)
+    int moneyLost = moneyMadeWhileSportsBetting(false, 0);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, totalTemp, fourFour, rightSpelling,totalSum, otherMusic, sumOfcalculatedNumber, lettersMissed, itemsMissed, profit, loss, moneyLost);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
